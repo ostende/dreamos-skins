@@ -1,8 +1,6 @@
 #!/bin/bash -e
 # created by Ostende - Installer for DreamOS v.04
 
-SKIN_DIR="/usr/share/enigma2/Zombi-Shadow-FHD"
-
 
 echo ""
 echo "********** Downlaod and Install (( Zombi-Shadow-FHD Skin Mod Ostende)) **********"
@@ -13,7 +11,7 @@ cp -rf /tmp/ostende-dreamskins-main/ostende-dreamskins/Zombi-Shadow-FHD /usr/sha
 cp -rf /tmp/ostende-dreamskins-main/ostende-dreamskins/renderers/* /usr/lib/enigma2/python/Components/Renderer/ > /dev/null 2>&1
 rm -rf /tmp/ostende-dreamskins* > /dev/null 2>&1
 rm -f /tmp/ostende-dreamskins-main.zip > /dev/null 2>&1
-sed -i 's/OVLock() == False/OVLock() == True/g' $SKIN_DIR/styles.xml
+
 sync
 echo "config.skin.primary_skin=Zombi-Shadow-FHD/skin.xml" >> /etc/enigma2/settings
 echo "************************"
@@ -26,5 +24,3 @@ else
 fi
 echo "... install finish"
 exit 0
-
-wget -q "--no-check-certificate" https://raw.githubusercontent.com/ostende/dreamos-skins/main/ostende-skin-installer.sh -O - | /bin/sh
