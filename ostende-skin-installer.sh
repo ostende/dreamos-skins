@@ -12,15 +12,5 @@ cp -rf /tmp/ostende-dreamskins-main/ostende-dreamskins/renderers/* /usr/lib/enig
 rm -rf /tmp/ostende-dreamskins* > /dev/null 2>&1
 rm -f /tmp/ostende-dreamskins-main.zip > /dev/null 2>&1
 
-sync
-echo "config.skin.primary_skin=Zombi-Shadow-FHD/skin.xml" >> /etc/enigma2/settings
-echo "************************"
-read -p "Gui restarting? (y/n): " response </dev/tty
-if [ "$response" == "y" ]; then
-    echo "enigma2 restarting now"
-    systemctl restart enigma2
-else
-    echo "you need restart enigma2"
-fi
 echo "... install finish"
 exit 0
