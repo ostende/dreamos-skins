@@ -1,6 +1,27 @@
 #!/bin/bash -e
 # created by Ostende - Installer for DreamOS v.04
 
+apt-get install enigma2-plugin-extensions-secondinfobar2
+
+apt-get install enigma2-plugin-extensions-weatherplugin
+
+apt-get install enigma2-plugin-systemplugins-weathercomponenthandler
+
+apt-get install enigma2-plugin-skincomponents-channelselectionshorttitle
+
+apt-get install enigma2-plugin-skincomponents-eventlist
+
+apt-get install enigma2-plugin-skincomponents-eventposition
+
+apt-get install enigma2-plugin-skincomponents-reftopiconname
+
+apt-get install enigma2-plugin-skincomponents-weathercomponent
+
+apt-get install enigma2-plugin-skincomponents-eventlist
+
+apt-get install enigma2-plugin-skincomponents-eventposition
+
+apt-get install enigma2-plugin-skincomponents-reftopiconname
 
 echo ""
 echo "********** Downlaod and Install (( Zombi-Shadow-FHD Skin Mod Ostende)) **********"
