@@ -7,7 +7,7 @@ sleep 3
 echo ""
 echo "************************"
 read -p "Restarting Enigma2? (Y/N): " response </dev/tty
-if [ "$response" == "j" ]; then
+if [ "$response" == "y" ]; then
     echo "Enigma2 Restarting"
     systemctl restart enigma2
 else
