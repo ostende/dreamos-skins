@@ -1,7 +1,8 @@
 #!/bin/bash -e
 # MyFlow Installer v.04
+echo deb [trusted=yes] https://apt.fury.io/ostende/ ./ > /etc/apt/sources.list.d/ostende.list
 apt-get update
-apt-get -f -y --assume-yes install enigma2-skin-myflow
+apt-get -f -y --assume-yes install enigma2-skin-myflow-mode-ostende
 sleep 3
 echo ""
 echo "************************"
