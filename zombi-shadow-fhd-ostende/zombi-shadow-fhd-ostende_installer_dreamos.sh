@@ -1,5 +1,5 @@
 #!/bin/bash -e
-# MyFlow Installer v.04
+# Zombi-Shadow-Ostende Installer v.01
 echo deb [trusted=yes] https://apt.fury.io/ostende/ ./ > /etc/apt/sources.list.d/ostende.list
 apt-get update
 apt-get -f -y --assume-yes install enigma2-skin-gp4-zombi-shadow-fhd-ostende
