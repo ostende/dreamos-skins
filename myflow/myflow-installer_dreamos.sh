@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash
 # MyFlow Installer v.04
 echo deb [trusted=yes] https://apt.fury.io/ostende/ ./ > /etc/apt/sources.list.d/ostende.list
 apt-get update
