@@ -118,6 +118,8 @@ if grep -qs -i 'mips' cat $CHECK ; then
         rm -f /tmp/dreamsat$VERSION-py2-mipsel.tar.gz
         chmod 0775 $PLUGIN_PATH/ui/*.so
         chmod 0775 $PLUGIN_PATH/core/*.so
+        mv /usr/lib/enigma2/python/Plugins/Extensions/DreamSat /data/
+        ln -sfn /data/DreamSat /usr/lib/enigma2/python/Plugins/Extensions
     fi
 elif grep -qs -i 'armv7l' cat $CHECK ; then
 	echo "[ Your device is armv7l ]"
@@ -132,6 +134,8 @@ elif grep -qs -i 'armv7l' cat $CHECK ; then
             tar -xzf /tmp/libpython3.7-arm.tar.gz -C /
             rm -f /tmp/libpython3.7-arm.tar.gz
             chmod 0775 /usr/lib/libpython3.7m.so.1.0
+            mv /usr/lib/enigma2/python/Plugins/Extensions/DreamSat /data/
+            ln -sfn /data/DreamSat /usr/lib/enigma2/python/Plugins/Extensions
             echo "Send libpython3.7m"
         fi
     else
@@ -199,8 +203,8 @@ fi
 
 echo ""
 echo "#########################################################"
-echo "#     DreamSatPanel $VERSION INSTALLED SUCCESSFULLY          #"
-echo "#                    BY Linuxsat                        #"
+echo "#     DreamSatPanel $VERSION INSTALLED SUCCESSFULLY     #"
+echo "#              BY Linuxsat  Mod Ostende                 #"
 echo "#########################################################"
 echo "#                Restart Enigma2 GUI                    #"
 echo "#########################################################"
